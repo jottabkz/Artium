@@ -3,20 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="dist/output.css">
     <title>Página Inicial - Artium</title>
 </head>
-<body class="bg-artium-background">
+<body class="bg-artium-background font-sans">
     <header class="flex flex-row justify-between bg-artium-primary">
-        <div></div>
+        <div class="flex items-center ml-3"><img src="assets/img/logo.png" class="h-10" alt="Artium"></div>
         <div></div>
         <ul class="flex p-4 gap-3">
-            <li class="p-2 hover:underline hover:duration-200"><a href="#">Sobre</a></li>
-            <li class="p-2"><a href="#">Exposições</a></li>
-            <li class="p-2"><a href="#">Eventos</a></li>
-            <li class="p-2"><a href="#">Contato</a></li>
+            <li class="p-2 hover:text-artium-accent hover:duration-200"><a href="#">Sobre</a></li>
+            <li class="p-2 hover:text-artium-accent"><a href="#">Exposições</a></li>
+            <li class="p-2 hover:text-artium-accent"><a href="#">Eventos</a></li>
+            <li class="p-2 hover:text-artium-accent"><a href="#">Contato</a></li>
             <li class="ml-5 text-white bg-artium-secondary p-2 rounded-md"><a href="#">Visite agora</a></li>
         </ul>
     </header>
+
+    <section id="hero" class="h-screen bg-cover bg-center bg-fixed" style="background-image: url('assets/img/museu-hero.png');">
+        <div class="flex h-full items-center justify-center bg-black bg-opacity-30">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold">Bem-vindo ao Artium</h1>
+            <p class="mt-4 text-xl">Descubra a arte que transcende o tempo.</p>
+        </div>
+    </div>
+    </section>
+        
+    <section id="sobre" class="flex flex-row mt-20">
+        <div class="flex flex-col w-[50%]">
+            <h1 class="text-4xl font-serif font-bold text-center mb-5 text-artium-accent">Sobre</h1>
+            <p class="text-artium-accent p-5 text-[1.2em]">Mais que um museu, o Artium é um santuário dedicado à beleza atemporal e ao diálogo entre o passado e o presente. Cada obra de nosso acervo foi selecionada para inspirar, educar e despertar a contemplação, transformando uma simples visita em uma jornada de descoberta.</p>
+            <br>
+            <p class="text-artium-accent p-5 text-[1.2em]">Nascido da paixão do colecionador Henrique Monteiro, o museu materializa seu sonho de tornar a grande arte acessível a todos. Instalado em sua antiga e charmosa propriedade, o Artium une arquitetura clássica e jardins serenos, criando uma atmosfera única para uma experiência inesquecível.</p>
+        </div>
+
+        <div>
+
+        </div>
+    </section>
 </body>
 </html>
